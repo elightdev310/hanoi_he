@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+
 use Validator;
 use Mail;
 use Exception;
+use Response;
 
 use App\Submission;
 
@@ -20,6 +23,43 @@ class EventController extends Controller
     {
         $submissions = Submission::orderBy('created_at', 'DESC')->paginate(10);
         return view('event.submissions', ['submissions'=>$submissions]);
+    }
+
+    public function submissions_export(Request $request)
+    {
+        $headers = array(
+            "Content-type" => "text/csv",
+            "Content-Disposition" => "attachment; filename=submissions.csv",
+            "Pragma" => "no-cache",
+            "Cache-Control" => "must-revalidate, post-check=0, pre-check=0",
+            "Expires" => "0"
+        );
+
+        $submissions = Submission::all();
+        $columns = array('First name', 'Last name', 'Company', 'Job designation', 'Email address', 'Contact number', 'Submitted at', 'Event');
+
+        $callback = function() use ($submissions, $columns)
+        {
+            $file = fopen('php://output', 'w');
+            fputcsv($file, $columns);
+
+            foreach($submissions as $sm) {
+                $row = array(
+                        $sm->first_name,
+                        $sm->last_name,
+                        $sm->company,
+                        $sm->job_designation,
+                        $sm->email,
+                        $sm->phone,
+                        $sm->created_at->format('Y-m-d H:i'),
+                        $sm->getEventTypeName()
+                    );
+                fputcsv($file, $row);
+            }
+            fclose($file);
+        };
+        return Response::stream($callback, 200, $headers);
+
     }
 
     public function hcm_eblast_page(Request $request)

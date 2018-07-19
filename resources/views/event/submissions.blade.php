@@ -5,6 +5,9 @@
 @section('page_id')submissions @endsection
 
 @section('content')
+    <div class="clearfix mb-2">
+        <a class="btn btn-primary float-right" href="{{ route('submissions_export') }}">Export</a>
+    </div>
     <table class="table table-striped">
         <thead>
             <th>First name</th>
@@ -14,12 +17,12 @@
             <th>Email address</th>
             <th>Contact number</th>
             <th>Submitted at</th>
-            <th></th>
+            <th>Event</th>
         </thead>
         <tbody>
             @if (!$submissions->count())
                 <tr>
-                    <td colspan = "7">
+                    <td colspan = "8">
                         <p class="text-center">No submission</p>
                     </td>
                 </tr>

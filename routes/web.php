@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('submissions',
     ['as' => 'submissions_page', 'uses' => 'EventController@submissions_page' ]);
+Route::get('submissions/export',
+    ['as' => 'submissions_export', 'uses' => 'EventController@submissions_export' ]);
 
 Route::get('hcm-eblast',
     ['as' => 'hcm_eblast_page', 'uses' => 'EventController@hcm_eblast_page' ]);
