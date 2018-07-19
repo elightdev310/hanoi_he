@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 
 use Validator;
-use Mail;
 use Exception;
 use Response;
 
+use Illuminate\Support\Facades\Mail;
+
 use App\Submission;
+use App\Mail\EventRegistered;
 
 class EventController extends Controller
 {
@@ -21,6 +23,8 @@ class EventController extends Controller
 
     public function submissions_page(Request $request)
     {
+        // $this->sendSubmissionMail(Submission::find(1));
+
         $submissions = Submission::orderBy('created_at', 'DESC')->paginate(10);
         return view('event.submissions', ['submissions'=>$submissions]);
     }
@@ -108,6 +112,8 @@ class EventController extends Controller
                 'type'             => $request->input('type'),
             ]);
             if ($submission) {
+                $this->sendSubmissionMail($submission);
+
                 return redirect()->back()->with('status', 'You have been successfully registered and should receive a confirmation email shortly.');
             } else {
                 return redirect()->back()->withErrors('Failed to create submission.')->withInput();
@@ -116,5 +122,15 @@ class EventController extends Controller
         } catch(Exception $e) {
             return redirect()->back()->withErrors('Failed to register information.('.$e->getMessage().')')->withInput();
         }
+    }
+
+    protected function sendSubmissionMail(Submission $submission)
+    {
+        // Send mail to submitter
+        Mail::to($submission->email)->send(new EventRegistered($submission, true));
+
+        // Send mail to admin
+        $to_mail = 'to-loan.tran@henkel.com';
+        Mail::to($to_mail)->send(new EventRegistered($submission, false));
     }
 }
