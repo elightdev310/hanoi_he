@@ -17,7 +17,7 @@
             <th></th>
         </thead>
         <tbody>
-            @if (empty($submissions))
+            @if (!$submissions->count())
                 <tr>
                     <td colspan = "7">
                         <p class="text-center">No submission</p>

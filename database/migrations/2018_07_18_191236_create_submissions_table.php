@@ -18,7 +18,7 @@ class CreateSubmissionsTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('company');
-            $table->longText('job_designation');
+            $table->string('job_designation');
             $table->string('email');
             $table->string('phone');
             $table->string('type');

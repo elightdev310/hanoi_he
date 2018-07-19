@@ -16,7 +16,7 @@ class Submission extends Model
     public static function checkExist($email, $type) {
         $result = self::where('email', $email)
             ->where('type', $type)
-            ->firstOrFail();
+            ->first();
         if ($result) {
             return true;
         }

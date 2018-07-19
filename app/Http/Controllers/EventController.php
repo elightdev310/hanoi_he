@@ -55,7 +55,7 @@ class EventController extends Controller
             }
 
             if (Submission::checkExist($request->input('email'), $request->input('type'))) {
-                return redirect()->back()->withErrors('You have already submitted.')->withInput();
+                return redirect()->back()->withErrors('You are already registered.')->withInput();
             }
 
             $submission = Submission::create([
@@ -68,7 +68,7 @@ class EventController extends Controller
                 'type'             => $request->input('type'),
             ]);
             if ($submission) {
-                return redirect()->back()->with('status', 'Success to register.');
+                return redirect()->back()->with('status', 'You have been successfully registered and should receive a confirmation email shortly.');
             } else {
                 return redirect()->back()->withErrors('Failed to create submission.')->withInput();
             }

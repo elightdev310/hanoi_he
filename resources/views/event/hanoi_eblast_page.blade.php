@@ -54,7 +54,7 @@
         </tbody>
     </table>
     <p>
-        For any questions, please contact To Loan Tran - <a href="mailto:to-loan.tran@henkel.com">to-loan.tran@henkel.com</a>
+        For any questions, please contact Loan Tran - <a href="mailto:to-loan.tran@henkel.com">to-loan.tran@henkel.com</a>
     </p>
     <p>
         <a href="#">For more event details</a>

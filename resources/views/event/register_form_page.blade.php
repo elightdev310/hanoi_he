@@ -26,7 +26,7 @@
         </div>
         <div class="form-group row">
             <div class="col-sm-12">
-                <textarea class="form-control" name="job_designation" placeholder="Job Designation" data-validation="required" rows="5">{!! old('job_designation') !!}</textarea>
+                <input type="text" class="form-control" name="job_designation" data-validation="required" placeholder="Job designation" value="{{ old('job_designation') }}">
             </div>
         </div>
         <div class="form-group row">
