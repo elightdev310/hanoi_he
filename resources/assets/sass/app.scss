@@ -1,0 +1,55 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.alert{
+  ul {
+    margin-bottom: 0px;
+  }
+}
+.layout-modal {
+  background: white;
+}
+
+.layout-event {
+  margin: 20px 0px;
+  .title {
+    color: red;
+    font-weight: bold;
+  }
+  .content-header {
+    margin: 1rem 0px;
+  }
+
+  table.schedule-table {
+    background: #e0e0e0;
+    td {
+      border: solid 2px $body-bg;
+    }
+    td.schedule-time {
+      background: #a5a5a5;
+      color: white;
+    }
+    td.schedule-desc {
+
+    }
+  }
+}
+
+.register-form {
+  span.form-error {
+    color: rgb(185, 74, 72);
+    font-size:0.8em;
+  }
+}
