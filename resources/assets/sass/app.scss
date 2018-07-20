@@ -22,28 +22,42 @@
   background: white;
 }
 
+.color-red {
+  color: red !important;
+}
+
+.container {
+  background: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .layout-event {
-  margin: 20px 0px;
   .title {
-    color: red;
     font-weight: bold;
   }
   .content-header {
-    margin: 1rem 0px;
+    margin-bottom: 1rem;
   }
 
   table.schedule-table {
     background: #e0e0e0;
-    td {
-      border: solid 2px $body-bg;
+    td, th {
+      border: solid 2px white;
     }
-    td.schedule-time {
+    .schedule-time {
       background: #a5a5a5;
       color: white;
     }
-    td.schedule-desc {
+    .schedule-desc {
 
     }
+  }
+
+  .footer {
+    padding: 50px 25px 80px;
+    color: white;
+    font-size: 0.8rem;
+    background: #444;
   }
 }
 

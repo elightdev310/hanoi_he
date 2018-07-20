@@ -1,7 +1,7 @@
 @extends('layouts.event')
 
 @section('htmlheader_title')Submissions @endsection
-
+@section('title')Submissions @endsection
 @section('page_id')submissions @endsection
 
 @section('content')
