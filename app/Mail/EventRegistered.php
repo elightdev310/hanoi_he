@@ -33,19 +33,26 @@ class EventRegistered extends Mailable
      */
     public function build()
     {
-        $message = '';
-        $title = '';
         if ($this->to_submitter) {
-            $message = sprintf('You are registered to %s.', $this->submission->getEventTypeName());
-            $title = sprintf('Registered to %s.', $this->submission->getEventTypeName());
+            $title = sprintf('Registered at %s.', $this->submission->getEventTypeName());
+            $view = '';
+            if ($this->submission->type == 'hcm-08-09-2018') {
+                $view = 'emails.hcm_event_registered_submitter';
+            } else {
+                $view = 'emails.hanoi_event_registered_submitter';
+            }
+            return $this->view($view)
+                        ->subject($title);
         } else {
-            $message = sprintf('%s are registered to %s.',
+            $message = sprintf('%s are registered at %s.',
                 $this->submission->first_name.' '.$this->submission->last_name,
                 $this->submission->getEventTypeName());
             $title = $message;
+
+            return $this->view('emails.event_registered')
+                ->subject($title)
+                ->with(['mail_message'=> $message]);
         }
-        return $this->view('emails.event_registered')
-                    ->subject($title)
-                    ->with(['mail_message'=> $message]);
+
     }
 }

@@ -90,9 +90,7 @@
             </tr>
         </tbody>
     </table>
-    <p>
-        For any questions, please contact Loan Tran - <a href="mailto:to-loan.tran@henkel.com">to-loan.tran@henkel.com</a>
-    </p>
+    @include('event.includes.event_footer_description')
 
     @include('event.includes.register_modal_panel', ['type'=>'hanoi-08-11-2018'])
 @endsection
