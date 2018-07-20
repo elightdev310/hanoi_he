@@ -10,7 +10,8 @@
     <div style="float: left; width: 60px;">Venue:</div>
     <div style="float: left;">
         Lotte Centre Hanoi, Emerald,<br/>
-        Meeting Room, 6th floor, 54 Lieu Giai, Ba Dinh,<br/>
+        Meeting Room, 6th floor, <br/>
+        54 Lieu Giai, Ba Dinh,<br/>
         Hanoi, Vietnam
     </div>
 </div>

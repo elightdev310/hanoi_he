@@ -26,18 +26,23 @@
     <br/>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-sm-6">
             <h5 class="font-weight-bold color-red">EVENT INFORMATION</h5>
             <div class="row">
-                <div class="col-3 font-weight-bold">Date: </div>
-                <div class="col-9">11th August 2018</div>
+                <div class="col-3 col-md-2 font-weight-bold">Date: </div>
+                <div class="col-9 col-md-10">11th August 2018</div>
             </div>
             <div class="row">
-                <div class="col-3 font-weight-bold">Venue: </div>
-                <div class="col-9">Lotte Centre Hanoi, Emerald Meeting room, 6th Floor, 54 Lieu Giai, Ba Dinh, Hanoi, Vietnam</div>
+                <div class="col-3 col-md-2 font-weight-bold">Venue: </div>
+                <div class="col-9 col-md-10">
+                    Lotte Centre Hanoi, Emerald,<br/>
+                    Meeting Room, 6th floor, <br/>
+                    54 Lieu Giai, Ba Dinh,<br/>
+                    Hanoi, Vietnam
+                </div>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-sm-6">
             <img src="{{asset('images/Hanoi_Invitation_icons_HR.jpg')}}" class="img-fluid" width="100%">
         </div>
     </div>
@@ -56,7 +61,7 @@
             </tr>
             <tr>
                 <td class="schedule-time">9:00 - 9:15</td>
-                <td class="schedule-desc">Opening and Welcoming Sppech</td>
+                <td class="schedule-desc">Opening and Welcoming Speech</td>
             </tr>
             <tr>
                 <td colspan="2">
