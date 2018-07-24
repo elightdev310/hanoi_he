@@ -70,27 +70,27 @@
             </tr>
             <tr>
             <tr>
-                <td class="schedule-time">10:00 - 10:20</td>
+                <td class="schedule-time">10:00 - 10:45</td>
                 <td class="schedule-desc">Introduction - Mobile application</td>
             </tr>
             <tr>
-                <td class="schedule-time">10:20 - 11:05</td>
+                <td class="schedule-time">10:45 - 11:30</td>
                 <td class="schedule-desc">Structure Bonding</td>
             </tr>
             <tr>
-                <td class="schedule-time">11:20 - 12:05</td>
+                <td class="schedule-time">11:45 - 12:30</td>
                 <td class="schedule-desc">Encapsulation</td>
             </tr>
             <tr>
-                <td class="schedule-time">12:05 - 13:00</td>
+                <td class="schedule-time">12:30 - 13:30</td>
                 <td class="schedule-desc">Lunch Break</td>
             </tr>
             <tr>
-                <td class="schedule-time">13:30 - 14:15</td>
+                <td class="schedule-time">14:00 - 14:45</td>
                 <td class="schedule-desc">Compact Camera Module</td>
             </tr>
             <tr>
-                <td class="schedule-time">14:15 - 15:00</td>
+                <td class="schedule-time">14:45 - 15:30</td>
                 <td class="schedule-desc">Solar</td>
             </tr>
         </tbody>
