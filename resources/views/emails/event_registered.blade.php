@@ -9,5 +9,5 @@
 
 <p>
 Thanks,</br>
-360-biz.
+Henkel Vietnam Electronics
 </p>
