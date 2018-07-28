@@ -75,7 +75,7 @@
             </tr>
             <tr>
                 <td class="schedule-time">10:45 - 11:30</td>
-                <td class="schedule-desc">Structure Bonding</td>
+                <td class="schedule-desc">Structural Bonding</td>
             </tr>
             <tr>
                 <td class="schedule-time">11:45 - 12:30</td>
