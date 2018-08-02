@@ -1,15 +1,16 @@
-@extends('layouts.event')
+@extends('layouts.simple')
 
 @section('htmlheader_title')Webinar @endsection
-@section('title')Learn More about Simplified New Approaches to High Thermal Die Attach @endsection
 
 @section('page_id')webinar-semi @endsection
 
-@section('content_header')
-    <img src="{{asset('images/Semi-sintering-Landing-Page.jpg')}}" class="img-fluid" alt="Webinar Aug.22" width="100%">
-@endsection
-
 @section('content')
+    <div class="content-header">
+        <img src="{{asset('images/Semi-sintering-Landing-Page.jpg')}}" class="img-fluid" alt="Webinar Aug.22" width="100%">
+    </div>
+
+    <h2 class="title font-weight-bold color-red mt-5 mb-3">Learn More about Simplified New Approaches to High Thermal Die Attach</h2>
+
     <p>Join distinguished industry experts <strong>Jan Vardaman</strong> of <strong>TechSearch International</strong> and <strong>Davy Nakada</strong> of <strong>Henkel Corporation</strong> for a discussion about the market conditions driving a new approach to high thermal conductive die attach materials and processes.</p>
     <p>Increases in the demand for high-performance power devices have underscored the need for better thermal control at the die level.  This, combined with impending environmental legislation and the challenging processes associated with current materials, has accelerated the requirement for an easily-processed, effective die attach solution for managing the heat generated at the die level.  Register now to secure your spot and improve your competitive advantage by being among those in the know.</p>
 
@@ -97,6 +98,9 @@
             </div>
         </div>
     </form>
+    <div class="clearfix">
+        <img src="{{asset('images/henkel.png')}}" class="float-right">
+    </div>
 @endsection
 
 @push('scripts')
