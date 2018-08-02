@@ -171,7 +171,7 @@ class EventController extends Controller
             ]);
 
             if ($wr) {
-                $this->sendWebinarRegisterMail($wr);
+                //$this->sendWebinarRegisterMail($wr);
 
                 return redirect('semi#register-form')->with('status', 'You have been successfully registered and should receive a confirmation email shortly.');
             } else {
@@ -190,7 +190,7 @@ class EventController extends Controller
 
         // Send mail to admin
         $to_mail = 'to-loan.tran@henkel.com';
-        // Mail::to($to_mail)->send(new WebinarRegistered($wr, false));
+        Mail::to($to_mail)->send(new WebinarRegistered($wr, false));
     }
 
     public function submissions_webinar_page(Request $request)
