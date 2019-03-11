@@ -66,7 +66,7 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="">Company Email*</label>
-                    <input type="text" class="form-control" name="company_email" data-validation="required" value="{{ old('company_email') }}">
+                    <input type="text" class="form-control" name="company_email" data-validation="email" value="{{ old('company_email') }}">
                 </div>
             </div>
             <div class="col-sm-6">

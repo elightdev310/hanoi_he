@@ -33,10 +33,10 @@ Route::post('register/{type}',
 
 
 /** Webinar Pages */
-Route::get('semi',
-    ['as' => 'semi_page', 'uses' => 'EventController@semi_page' ]);
-Route::post('semi_page',
-    ['as' => 'webinar_register_action', 'uses' => 'EventController@webinar_register_action' ]);
+// Route::get('semi',
+//     ['as' => 'semi_page', 'uses' => 'EventController@semi_page' ]);
+// Route::post('semi_page',
+//     ['as' => 'webinar_register_action', 'uses' => 'EventController@webinar_register_action' ]);
 Route::get('submissions/webinar',
     ['as' => 'submissions_webinar_page', 'uses' => 'EventController@submissions_webinar_page' ]);
 Route::get('submissions/webinar/export',
