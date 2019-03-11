@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',
+  ['as' => 'home_page', 'uses' => 'EventController@home_page' ]);
 
 Route::get('submissions',
     ['as' => 'submissions_page', 'uses' => 'EventController@submissions_page' ]);

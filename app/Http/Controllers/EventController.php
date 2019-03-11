@@ -23,6 +23,10 @@ class EventController extends Controller
 
     }
 
+    public function home_page(Request $request) {
+      return view('welcome');
+    }
+
     public function submissions_page(Request $request)
     {
         // $this->sendSubmissionMail(Submission::find(1));
