@@ -39,6 +39,7 @@
   }
   .content-header {
     margin-bottom: 1rem;
+    margin: 0px -25px;
   }
 
   table.schedule-table {
@@ -99,5 +100,25 @@
 
   a:not(.collapsed):after {
     content: 'Read Less';
+  }
+}
+
+#die_attach_quiz_form {
+  .quiz1-panel {
+    margin: 30px 0px;
+  }
+  .sub-chk-section {
+    margin-left: 30px;
+    overflow: hidden;
+  }
+  .quiz-answer {
+    float: left; margin-right: 30px;
+  }
+  input[type=text] {
+    border: none;
+    border-bottom: dotted 1px #333333;
+    &:active, &:focus {
+
+    }
   }
 }

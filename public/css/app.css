@@ -10503,6 +10503,7 @@ a.text-dark:focus {
 
 .layout-event .content-header {
   margin-bottom: 1rem;
+  margin: 0px -25px;
 }
 
 .layout-event table.schedule-table {
@@ -10561,5 +10562,24 @@ a.text-dark:focus {
 
 .speaker-box a:not(.collapsed):after {
   content: 'Read Less';
+}
+
+#die_attach_quiz_form .quiz1-panel {
+  margin: 30px 0px;
+}
+
+#die_attach_quiz_form .sub-chk-section {
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+#die_attach_quiz_form .quiz-answer {
+  float: left;
+  margin-right: 30px;
+}
+
+#die_attach_quiz_form input[type=text] {
+  border: none;
+  border-bottom: dotted 1px #333333;
 }
 

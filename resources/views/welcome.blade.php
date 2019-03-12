@@ -83,6 +83,12 @@
                     <a href="{{ route('hanoi_eblast_page') }}">Hanoi Eblast</a>
                     <a href="{{ route('submissions_page') }}">Submissions</a>
                 </div>
+
+                <h3 style="margin-top: 70px;">Die Attach</h3>
+                <div class="links">
+                    <a href="{{ route('die_attach_page') }}">Die Attach</a>
+                    <a href="{{ route('submissions_die_attach_page') }}">Submissions</a>
+                </div>
             </div>
         </div>
     </body>

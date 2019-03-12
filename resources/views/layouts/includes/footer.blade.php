@@ -1,7 +1,7 @@
 <footer>
     <div class="row">
         <div class="col-md-4">
-            Copyright © 2018 Henkel Corporation All rights reserved.<br/><br/>
+            Copyright © 2019 Henkel Corporation All rights reserved.<br/><br/>
             Henkel Adhesive Technologies Vietnam Co., Ltd.<br/>
             No.7, Road 9A, Bien Hoa 2 Industrial Zone, Dong Nai province, Vietnam
             <br/><br/>
