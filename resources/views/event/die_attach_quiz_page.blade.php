@@ -14,7 +14,7 @@
     <h3 class="font-weight-bold color-red text-center">Pre-training Questionaire</h3>
 
     <p class="mt-3">This pre-training questionaire is designed to help us find out as much as possible from you about the training we will be carrying out for your organization. This information will enable us to customize and focus content of the workshops on specific topics.</p>
-    <p class="font-italic">This is not a "test" and you will not be "graded" on you performance.</p>
+    <p class="font-italic">This is not a "test" and you will not be "graded" on your performance.</p>
 
     <div class="mt-5">
         @include('layouts.includes.status_message')
@@ -48,7 +48,7 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[rc][others]" id="quiz1-rc-others" value="1" />
-                            <label for="quiz1-rc-others">Others please specify</label>
+                            <label for="quiz1-rc-others">Other (please specify)</label>
                             <input type="text" name="quiz1[rc][others_text]" value=""/>
                         </div>
                     </div>
@@ -59,23 +59,23 @@
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][125c]" id="quiz1-ct-125c" value="125C" />
-                            <label for="quiz1-ct-125c">125C</label>
+                            <label for="quiz1-ct-125c">125°C</label>
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][150c]" id="quiz1-ct-150c" value="150C" />
-                            <label for="quiz1-ct-150c">150C</label>
+                            <label for="quiz1-ct-150c">150°C</label>
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][175c]" id="quiz1-ct-175c" value="175C" />
-                            <label for="quiz1-ct-175c">175C</label>
+                            <label for="quiz1-ct-175c">175°C</label>
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][200c]" id="quiz1-ct-200c" value="200C" />
-                            <label for="quiz1-ct-200c">200C</label>
+                            <label for="quiz1-ct-200c">200°C</label>
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][others]" id="quiz1-ct-others" value="1" />
-                            <label for="quiz1-ct-others">Others please specify</label>
+                            <label for="quiz1-ct-others">Other (please specify)</label>
                             <input type="text" name="quiz1[ct][others_text]" value=""/>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[eb][others]" id="quiz1-eb-others" value="1" />
-                            <label for="quiz1-eb-others">Others please specify</label>
+                            <label for="quiz1-eb-others">Other (please specify)</label>
                             <input type="text" name="quiz1[eb][others_text]" value=""/>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[sd][others]" id="quiz1-sd-others" value="1" />
-                            <label for="quiz1-sd-others">Others please specify</label>
+                            <label for="quiz1-sd-others">Other (please specify)</label>
                             <input type="text" name="quiz1[sd][others_text]" value=""/>
                         </div>
                     </div>
@@ -164,14 +164,14 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ld][others]" id="quiz1-ld-others" value="1" />
-                            <label for="quiz1-ld-others">Others please specify</label>
+                            <label for="quiz1-ld-others">Other (please specify)</label>
                             <input type="text" name="quiz1[ld][others_text]" value=""/>
                         </div>
                     </div>
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">6. Which material/s will impact MSL performance of a package?</div>
+                    <div class="font-weight-bold">6. Which material(s) will impact MSL performance of a package?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[msl][die-attach]" id="quiz1-msl-die-attach" value="Die-Attach" />
@@ -195,7 +195,7 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[msl][others]" id="quiz1-msl-others" value="1" />
-                            <label for="quiz1-msl-others">Others please specify</label>
+                            <label for="quiz1-msl-others">Other (please specify)</label>
                             <input type="text" name="quiz1[msl][others_text]" value=""/>
                         </div>
                     </div>
@@ -226,14 +226,14 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[curing][others]" id="quiz1-curing-others" value="1" />
-                            <label for="quiz1-curing-others">Others please specify</label>
+                            <label for="quiz1-curing-others">Other (please specify)</label>
                             <input type="text" name="quiz1[curing][others_text]" value=""/>
                         </div>
                     </div>
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">8. What volatiles evaporates during die-attach curing?</div>
+                    <div class="font-weight-bold">8. What volatiles evaporate during die-attach curing?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ve][epoxy]" id="quiz1-ve-epoxy" value="Epoxy" />
@@ -257,14 +257,14 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ve][others]" id="quiz1-ve-others" value="1" />
-                            <label for="quiz1-ve-others">Others please specify</label>
+                            <label for="quiz1-ve-others">Other (please specify)</label>
                             <input type="text" name="quiz1[ve][others_text]" value=""/>
                         </div>
                     </div>
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">9. What cause die-attach to shrink during curing?</div>
+                    <div class="font-weight-bold">9. What causes die-attach to shrink during curing?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[shrink][moisture]" id="quiz1-shrink-moisture" value="Moisture" />
@@ -288,14 +288,14 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[shrink][others]" id="quiz1-shrink-others" value="1" />
-                            <label for="quiz1-shrink-others">Others please specify</label>
+                            <label for="quiz1-shrink-others">Other (please specify)</label>
                             <input type="text" name="quiz1[shrink][others_text]" value=""/>
                         </div>
                     </div>
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">10. What property/ies of die-attach material that allow sit to stick well in leadframe and die surface?</div>
+                    <div class="font-weight-bold">10. What property(ies) of die-attach material allow site to stick well in leadframe and die surface?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[leadframe][resin]" id="quiz1-leadframe-resin" value="Resin" />
@@ -319,14 +319,14 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[leadframe][others]" id="quiz1-leadframe-others" value="1" />
-                            <label for="quiz1-leadframe-others">Others please specify</label>
+                            <label for="quiz1-leadframe-others">Other (please specify)</label>
                             <input type="text" name="quiz1[leadframe][others_text]" value=""/>
                         </div>
                     </div>
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">11. What generally cause die-attach delamination?</div>
+                    <div class="font-weight-bold">11. What generally causes die-attach delamination?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[delamination][st]" id="quiz1-delamination-st" value="Substrate type" />
@@ -346,7 +346,7 @@
                         </div>
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[delamination][others]" id="quiz1-delamination-others" value="1" />
-                            <label for="quiz1-delamination-others">Others please specify</label>
+                            <label for="quiz1-delamination-others">Other (please specify)</label>
                             <input type="text" name="quiz1[delamination][others_text]" value=""/>
                         </div>
                     </div>
@@ -397,7 +397,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <div class="font-weight-bold">14. Will FTV formations cause a material's formulation change?</div>
+                    <div class="font-weight-bold">14. Will FTV formations cause a material's formulation to change?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[formulation][yes]" id="quiz1-formulation-yes" value="Yes" />

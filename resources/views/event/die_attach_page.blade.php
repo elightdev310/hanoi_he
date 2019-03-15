@@ -10,31 +10,7 @@
 @endsection
 
 @section('content')
-    <div class="row mt-5">
-        <div class="col-sm-6">
-            <h5 class="font-weight-bold">EVENT INFORMATION</h5>
-            <div class="row">
-                <div class="col-3 col-md-2 font-weight-bold">Date: </div>
-                <div class="col-9 col-md-10">24th April 2019</div>
-            </div>
-            <div class="row">
-                <div class="col-3 col-md-2 font-weight-bold">Time: </div>
-                <div class="col-9 col-md-10">09:00 - 16:00</div>
-            </div>
-            <div class="row">
-                <div class="col-3 col-md-2 font-weight-bold">Venue: </div>
-                <div class="col-9 col-md-10">
-                    P1
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-
-        </div>
-    </div>
-    <br/>
-
-    <h2 class="title color-red">Learn More about Simplified New Approaches to High Thermal Die Attach</h2>
+    <h2 class="title color-red mt-5">Learn More about Simplified New Approaches to High Thermal Die Attach</h2>
 
     <h3 class="font-weight-bold text-center mt-5">REGISTER NOW</h3>
     @include('layouts.includes.status_message')
@@ -56,7 +32,7 @@
                 </div>
                 <div class="form-group col-sm-6">
                     <label>Country*</label>
-                    <input type="text" class="form-control" name="country" data-validation="required" value="{{ old('country') }}">
+                    <input type="text" class="form-control country-field" name="country" data-validation="required" value="{{ old('country') }}">
                 </div>
                 <div class="form-group col-sm-6">
                     <label>Organization*</label>
@@ -93,14 +69,14 @@
                         </tr>
                         <tr>
                             <td><input type="radio" name="time_slot" value="ts-0425-p1" id="ts-0425-p1"></td>
-                            <td>Wednesday, April 25, 2019</td>
+                            <td>Thursday, April 25, 2019</td>
                             <td></td>
-                            <td>9:00AM - 11:00AM</td>
+                            <td>8:00AM - 11:00AM</td>
                             <td>P1</td>
                         </tr>
                         <tr>
                             <td><input type="radio" name="time_slot" value="ts-0425-p4" id="ts-0425-p4"></td>
-                            <td>Wednesday, April 25, 2019</td>
+                            <td>Thursday, April 25, 2019</td>
                             <td></td>
                             <td>2:00PM - 5:00PM</td>
                             <td>P4</td>
