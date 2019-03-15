@@ -24,8 +24,7 @@
             @csrf
             <div class="">
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[rc][q]" id="quiz1-rc-q" value="1" />
-                    <label for="quiz1-rc-q">Which resin chemistry is used in die-attach products?</label>
+                    <div class="font-weight-bold">1. Which resin chemistry is used in die-attach products?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[rc][epoxy]" id="quiz1-rc-epoxy" value="Epoxy" />
@@ -56,8 +55,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[ct][q]" id="quiz1-ct-q" value="1" />
-                    <label for="quiz1-ct-q">What's the commonly used die-attach curing temperature?</label>
+                    <div class="font-weight-bold">2. What's the commonly used die-attach curing temperature?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ct][125c]" id="quiz1-ct-125c" value="125C" />
@@ -84,8 +82,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[eb][q]" id="quiz1-eb-q" value="1" />
-                    <label for="quiz1-eb-q">Which are more important to cause epoxy bleed out?</label>
+                    <div class="font-weight-bold">3. Which are more important to cause epoxy bleed out?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[eb][resin]" id="quiz1-eb-resin" value="Resin" />
@@ -120,8 +117,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[sd][q]" id="quiz1-sd-q" value="1" />
-                    <label for="quiz1-sd-q">What die-attach material property is important for small die sizes?</label>
+                    <div class="font-weight-bold">4. What die-attach material property is important for small die sizes?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[sd][cte]" id="quiz1-sd-cte" value="CTE" />
@@ -148,8 +144,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[ld][q]" id="quiz1-ld-q" value="1" />
-                    <label for="quiz1-ld-q">What die-attach material property is important for large die sizes?</label>
+                    <div class="font-weight-bold">5. What die-attach material property is important for large die sizes?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ld][cte]" id="quiz1-ld-cte" value="CTE" />
@@ -176,8 +171,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[msl][q]" id="quiz1-msl-q" value="1" />
-                    <label for="quiz1-msl-q">Which material/s will impact MSL performance of a package?</label>
+                    <div class="font-weight-bold">6. Which material/s will impact MSL performance of a package?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[msl][die-attach]" id="quiz1-msl-die-attach" value="Die-Attach" />
@@ -208,8 +202,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[curing][q]" id="quiz1-curing-q" value="1" />
-                    <label for="quiz1-curing-q">What impacts the most in curing die-attach in a package?</label>
+                    <div class="font-weight-bold">7. What impacts the most in curing die-attach in a package?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[curing][temp]" id="quiz1-curing-temp" value="Temperature" />
@@ -240,8 +233,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[ve][q]" id="quiz1-ve-q" value="1" />
-                    <label for="quiz1-ve-q">What volatiles evaporates during die-attach curing?</label>
+                    <div class="font-weight-bold">8. What volatiles evaporates during die-attach curing?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ve][epoxy]" id="quiz1-ve-epoxy" value="Epoxy" />
@@ -272,8 +264,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[shrink][q]" id="quiz1-shrink-q" value="1" />
-                    <label for="quiz1-shrink-q">What cause die-attach to shrink during curing?</label>
+                    <div class="font-weight-bold">9. What cause die-attach to shrink during curing?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[shrink][moisture]" id="quiz1-shrink-moisture" value="Moisture" />
@@ -304,8 +295,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[leadframe][q]" id="quiz1-leadframe-q" value="1" />
-                    <label for="quiz1-leadframe-q">What property/ies of die-attach material that allow sit to stick well in leadframe and die surface?</label>
+                    <div class="font-weight-bold">10. What property/ies of die-attach material that allow sit to stick well in leadframe and die surface?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[leadframe][resin]" id="quiz1-leadframe-resin" value="Resin" />
@@ -336,8 +326,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[delamination][q]" id="quiz1-delamination-q" value="1" />
-                    <label for="quiz1-delamination-q">What generally cause die-attach delamination?</label>
+                    <div class="font-weight-bold">11. What generally cause die-attach delamination?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[delamination][st]" id="quiz1-delamination-st" value="Substrate type" />
@@ -364,8 +353,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[ftv][q]" id="quiz1-ftv-q" value="1" />
-                    <label for="quiz1-ftv-q">What is freeze-thaw-void (FTV)?</label>
+                    <div class="font-weight-bold">12. What is freeze-thaw-void (FTV)?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ftv][syringe]" id="quiz1-ftv-syringe" value="Void in syringe" />
@@ -387,8 +375,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[ftv-cause][q]" id="quiz1-ftv-cause-q" value="1" />
-                    <label for="quiz1-ftv-cause-q">What is the cause of FTV?</label>
+                    <div class="font-weight-bold">13. What is the cause of FTV?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[ftv-cause][wst]" id="quiz1-ftv-cause-wst" value="Wrong storage temperature" />
@@ -410,8 +397,7 @@
                 </div>
 
                 <div class="quiz1-panel">
-                    <input type="checkbox" name="quiz1[formulation][q]" id="quiz1-formulation-q" value="1" />
-                    <label for="quiz1-formulation-q">Will FTV formations cause a material's formulation change?</label>
+                    <div class="font-weight-bold">14. Will FTV formations cause a material's formulation change?</div>
                     <div class="sub-chk-section">
                         <div class="quiz-answer">
                             <input type="checkbox" name="quiz1[formulation][yes]" id="quiz1-formulation-yes" value="Yes" />
@@ -431,13 +417,13 @@
 
 
             <div class="mt-5">
-                <div class="font-weight-bold">2. Please specify and Henkel Product Highlights you are interested in:</div>
+                <div class="font-weight-bold">15. Please specify any Henkel Product Highlights you are interested in:</div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="quiz2" value="{{ old('quiz2') }}">
                 </div>
             </div>
             <div class="mt-5">
-                <div class="font-weight-bold">3. What specific topic do expect to be discussed during the training?</div>
+                <div class="font-weight-bold">16. What specific topic do you expect to be discussed during the training?</div>
                 <div class="form-group">
                     <input type="text" class="form-control" name="quiz3" value="{{ old('quiz3') }}">
                 </div>

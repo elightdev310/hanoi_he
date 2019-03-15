@@ -16,6 +16,8 @@
     <th>Country</th>
     <th>Orgnization</th>
     <th>Job title</th>
+    <th>Date & Time</th>
+    <th>Venue</th>
     <th>Submitted at</th>
     </thead>
     <tbody>
@@ -34,6 +36,8 @@
         <td>{{ $da->country }}</td>
         <td>{{ $da->organization }}</td>
         <td>{{ $da->job_title }}</td>
+        <td>{{ \App\DieAttach::getTimefromTimeSlot($da->time_slot) }}</td>
+        <td>{{ \App\DieAttach::getVenuefromTimeSlot($da->time_slot) }}</td>
         <td>{{ $da->created_at->format('Y-m-d H:i') }}</td>
     </tr>
     @endforeach

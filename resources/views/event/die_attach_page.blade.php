@@ -67,6 +67,48 @@
                     <input type="text" class="form-control" name="job_title" data-validation="required" value="{{ old('job_title') }}">
                 </div>
             </div>
+            <div class="mt-5">
+                <table class="time-slot-table table table-bordered table-striped table-hover">
+                    <thead>
+                        <th></th>
+                        <th class="">Date</th>
+                        <th class="">Available schedule of supplier</th>
+                        <th class="">Time</th>
+                        <th class="">Venue</th>
+                    </thead>
+                    <tobdy>
+                        <tr>
+                            <td><input type="radio" name="time_slot" value="ts-0424-p1" id="ts-0424-p1"></td>
+                            <td>Wednesday, April 24, 2019</td>
+                            <td></td>
+                            <td>9:00AM - 11:00AM</td>
+                            <td>P1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="time_slot" value="ts-0424-p4" id="ts-0424-p4"></td>
+                            <td>Wednesday, April 24, 2019</td>
+                            <td></td>
+                            <td>2:00PM - 4:00PM</td>
+                            <td>P4</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="time_slot" value="ts-0425-p1" id="ts-0425-p1"></td>
+                            <td>Wednesday, April 25, 2019</td>
+                            <td></td>
+                            <td>9:00AM - 11:00AM</td>
+                            <td>P1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="time_slot" value="ts-0425-p4" id="ts-0425-p4"></td>
+                            <td>Wednesday, April 25, 2019</td>
+                            <td></td>
+                            <td>2:00PM - 5:00PM</td>
+                            <td>P4</td>
+                        </tr>
+                    </tobdy>
+                    </tobdy>
+                </table>
+            </div>
             <div class="form-group row mt-5">
                 <div class="col-sm-12 text-center">
                     <input type="submit" name="submit" class="btn btn-primary" value="Register">

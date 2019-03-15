@@ -10564,6 +10564,11 @@ a.text-dark:focus {
   content: 'Read Less';
 }
 
+.time-slot-table thead th,
+.time-slot-table tbody td {
+  text-align: center;
+}
+
 #die_attach_quiz_form .quiz1-panel {
   margin: 30px 0px;
 }

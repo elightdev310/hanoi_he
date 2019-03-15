@@ -39,5 +39,16 @@ HeApp.UI = {
         }
 
         return false;
+    },
+    init: function () {
+        $(document).ready(function() {
+            $('table.time-slot-table tr').on('click', function() {
+                $(this).find('input[type=radio]').each(function() {
+                    $(this).prop('checked', true);
+                });
+            });
+        });
     }
 };
+
+HeApp.UI.init();

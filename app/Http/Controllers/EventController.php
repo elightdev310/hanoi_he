@@ -273,6 +273,7 @@ class EventController extends Controller
                 'country'       => 'required',
                 'organization'  => 'required',
                 'job_title'     => 'required',
+                'time_slot'     => 'required',
             ]);
 
             if ($validator->fails()) {
@@ -290,6 +291,7 @@ class EventController extends Controller
                 'country'       => $request->input('country'),
                 'organization'  => $request->input('organization'),
                 'job_title'     => $request->input('job_title'),
+                'time_slot'     => $request->input('time_slot'),
                 'quiz'          => '',
             ]);
 
@@ -365,7 +367,7 @@ class EventController extends Controller
         );
 
         $das = DieAttach::all();
-        $columns = array('First name', 'Last name', 'Company email', 'Country', 'Organization', 'Job Title', 'Submitted at');
+        $columns = array('First name', 'Last name', 'Company email', 'Country', 'Organization', 'Job Title', 'Date & Time', 'Venue', 'Submitted at');
         $columns[] = "Which resin chemistry is used in die-attach products?";
         $columns[] = "What's the commonly used die-attach curing temperature?";
         $columns[] = "Which are more important to cause epoxy bleed out?";
@@ -398,6 +400,8 @@ class EventController extends Controller
                     $r->country,
                     $r->organization,
                     $r->job_title,
+                    DieAttach::getTimefromTimeSlot($r->time_slot),
+                    DieAttach::getVenuefromTimeSlot($r->time_slot),
                     $r->created_at->format('Y-m-d H:i'),
 
                     $this->get_die_attach_quiz1_answer($data, 'rc'),
